@@ -119,3 +119,80 @@ Exploratory Data Analysis (EDA)
 🤝 Let’s Connect
 
 If you found the project interesting or want to discuss SQL/data analysis techniques, feel free to reach out or open an issue.
+
+
+## Restoring the Lifeblood of Maji Ndogo 3
+
+This repository contains Week 3 of my SQL project analyzing the water accessibility challenges in Maji Ndogo.
+This phase moved beyond individual tables and into the world of multi-table relationships, set operations, and narrative-based analysis.
+It was the most challenging and eye-opening part of the project so far.
+
+📌 Project Overview
+
+Week 3 focused on stitching together multiple datasets to uncover the story hidden within them.
+Rather than analyzing tables in isolation, this phase required understanding how the data connects, interacts, and reveals meaning across relationships.
+
+I worked with a random audit sample, verified findings with basic statistical reasoning, and explored how the structure of a relational database strengthens analytical conclusions.
+
+🔍 Key Focus Areas
+
+Joining Multiple Tables: Creating meaningful outputs by combining related datasets
+
+Understanding ER Models: Interpreting how tables relate and ensuring relationships make sense
+
+Interpreting Random Audit Samples: Comparing sampled results with full-dataset patterns
+
+Applying Statistical Thinking: Using simple stats to validate assumptions and insights
+
+Moving From Queries to Narratives: Making the data “tell the story” rather than returning isolated numbers
+
+🧠 What I Accomplished
+
+By the end of Week 3, I strengthened my ability to:
+
+✔ Confidently join several tables
+
+✔ Understand and work with entity-relationship models
+
+✔ Handle multi-source query complexity
+
+✔ Use set operations to refine results
+
+✔ Support conclusions using basic statistical checks
+
+✔ Think beyond isolated queries and build analytical narratives
+
+I also completed the Week 3 MCQ assessment, which reinforced core concepts like joins, database structures, and set operations.
+
+🎥 Project Resources
+
+SQL Week 3 Project: https://lnkd.in/dhFxewhB
+
+(Insights from the joins and combinations will be shared in the next update.)
+
+📈 Skills Demonstrated
+
+Multi-Table Joins (INNER, LEFT, RIGHT, FULL)
+
+Entity Relationship Modeling
+
+Set Operations (UNION, INTERSECT, EXCEPT)
+
+Statistical Reasoning
+
+Working With Random Samples
+
+Query Optimization Thinking
+
+Data Storytelling Through SQL
+
+⏭️ What’s Next
+
+Next, I’ll be sharing the insights uncovered when all these joins and combinations come together.
+The data behaves very differently—and far more interestingly—once you connect the pieces.
+
+More updates loading… 🚀
+
+🤝 Connect or Contribute
+
+If you want to discuss SQL, data modeling, relational structures, or the Maji Ndogo project, feel free to open an issue or reach out.
