@@ -1,4 +1,4 @@
-## Restoring the Lifeblood of Maji Ndogo – SQL Analysis (Week 1)
+## Restoring the Lifeblood of Maji Ndogo 1
 
 This repository documents Week 1 of my SQL journey analyzing the water accessibility crisis in Maji Ndogo.
 This phase was all about stepping into real relational data, facing uncertainty, and learning through hands-on problem-solving—not theory.
