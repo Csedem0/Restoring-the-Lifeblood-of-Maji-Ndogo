@@ -196,3 +196,86 @@ More updates loading… 🚀
 🤝 Connect or Contribute
 
 If you want to discuss SQL, data modeling, relational structures, or the Maji Ndogo project, feel free to open an issue or reach out.
+
+## Restoring the Lifeblood of Maji Ndogo 4
+
+This final phase of the Maji Ndogo project focuses on translating analytical insights into an actionable, execution-ready plan.
+
+While earlier phases explored water access patterns, queue times, pollution levels, and data integrity, **Part 4 bridges the gap between analysis and real-world impact** by creating a database structure that engineers and decision-makers can actively use.
+
+
+ 🎯 Objective
+
+The goal of Part 4 is to design and populate a project tracking system that:
+
+- Identifies water sources requiring intervention
+- Specifies the exact improvement needed at each location
+- Provides location details for field engineers
+- Tracks implementation status and completion over time
+
+This ensures that insights derived from data directly inform infrastructure upgrades and resource allocation.
+
+
+🏗️ Project_progress Table Design
+
+A new table, `Project_progress`, is created to support field operations and monitoring.
+
+Key Features:
+- **Referential integrity** through foreign key constraints
+- **Controlled status updates** using CHECK constraints
+- **Support for repeat interventions** via a unique project ID
+- **Progress tracking** from backlog to completion
+
+Core Fields:
+- `source_id` – Links to the water source being improved
+- `Address`, `Town`, `Province` – Location details
+- `Source_type` – Type of water source
+- `Improvement` – Required intervention
+- `Source_status` – Backlog, In progress, or Complete
+- `Date_of_completion` – When work is finalized
+- `Comments` – Field notes from engineers
+
+
+🧠 Improvement Logic
+
+Improvements are assigned using rule-based SQL logic:
+
+| Water Source Type | Condition | Improvement |
+|------------------|----------|-------------|
+| River | All cases | Drill well |
+| Well | Chemical contamination | Install RO filter |
+| Well | Biological contamination | Install UV and RO filter |
+| Shared tap | Queue ≥ 30 minutes | Install additional taps |
+| In-home tap | Broken | Diagnose local infrastructure |
+
+Conditional logic is implemented using `CASE` statements, ensuring consistent and scalable decision-making.
+
+
+ 🔄 Data Population Workflow
+
+1. Relevant records are filtered to include only actionable sources
+2. Pollution, queue time, and infrastructure data are joined
+3. Improvement logic is applied using SQL control flow
+4. Results are inserted into the `Project_progress` table
+
+The final dataset contains **25,398 actionable improvement records**, each ready for execution and monitoring.
+
+
+📌 Outcome
+
+Part 4 delivers a fully operational planning table that:
+
+- Converts insights into execution
+- Enables accountability and progress tracking
+- Aligns data analysis with infrastructure development
+
+This phase completes the analytical lifecycle — from exploration to implementation.
+
+
+🛠️ Tools Used
+- SQL (CTEs, JOINs, CASE statements, constraints)
+- Relational database design
+- Data-driven decision modeling
+
+## 🤝 Connect or Contribute
+
